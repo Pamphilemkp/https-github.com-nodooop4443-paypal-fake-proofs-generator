@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal: Send Money Preview</title>
+    <link rel="stylesheet" href="send.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a509e366ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <img style="width: 100px;" alt="paypal-app" src="https://www.paypalobjects.com/paypal-ui/spots/svg/paypal-app.svg" class="" data-test-id="aqprimary-spot">
+            <li>
+               
+             <a style="padding: 15px; border-radius: 40px; background-color: rgba(209,241,255,.1);"  href="#"> <b>Dashboard</b></a>
+             <a  style="margin-left: 30px;" href="#" onclick="goPayment()" id="payment"><b>Send and Request</b></a>
+             </script>
+             <a  style="margin-left: 30px;" href="#"><b>Wallet</b></a>
+             <a  style="margin-left: 30px;" href="#"><b>Activity</b></a>
+             <a  style="margin-left: 30px;" href="#"><b>Help</b></a>
+            </li>
+            <i style="margin-left: 25%;" class="fa-solid fa-bell"></i>
+            <i class="fa-sharp fa-solid fa-gear"></i>
+            <a  style=" color: white;
+            text-decoration: none; font-family: arial; font-size: .875rem; margin-top: 7px; color: #D1F1FF;" href="#"><strong>LOG OUT</strong></a>
+        </ul>
+        </div>
+
+        <div id="container">
+            <div id="send-container">
+                <div id="font-user">
+                <i id="user" class="fa-solid fa-user"></i>
+                <p id="email"></p>
+                </div>
+                <div id="cashs">
+                    <i style="margin-top: -5px; margin-left: 10px;" class="fa-solid fa-dollar-sign"></i>
+                 <input id="inp-money"></input>
+                </div>
+                <div id="usd">
+                    <label id="usd-dolar"><b>USD</b></label>
+                 </div>
+                 <div id="describe">
+                    <input id="inp-about" placeholder="+ What's this payment for?">
+                 </div>
+            </div>
+        </div>
+
+        <div id="help-describe">
+            <p id="buyer">Eligible purchases are covered by <b style="text-decoration: 0; color: #1072eb;">PayPal Buyer Protection</b></p>
+            <p id="agreement">For more information please read our <b style="color: #1072eb;"> user agreement.</b></p>
+        </div>
+        <div id="but-countine">
+            <button id="countine" onclick="paypalProofGen()">Countine</button>
+           
+            <label id="cancel" onclick="paypalCancel()"><b>Cancel</b></label>
+        </div>
+        <script>
+        
+        function paypalProofGen() {
+            var inpText = document.getElementById("inp-money").value;
+            localStorage.setItem("myText", inpText);
+            window.location.href = "fullpay.html"
+        }
+
+
+        function paypalProofGen() {
+            var inpText = document.getElementById("inp-money").value;
+            localStorage.setItem("myTextLab", inpText);
+            window.location.href = "fullpay.html"
+        }
+
+        function paypalCancel() {
+            window.location.href = "dashboard.html"
+        }
+
+
+
+
+        var savedText = localStorage.getItem("myText");
+		document.getElementById("email").innerHTML = savedText;
+
+        </script>
+</body>
+</html>
