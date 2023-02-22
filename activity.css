@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+#navbar {
+    background-color:#142c8e;
+    height: 100px;
+}
+ul {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    height: 100px;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #D1F1FF;
+    font-family: arial;
+    font-size: 1rem;
+
+}
+
+#inp-payment {
+    height: 100px;
+    position: absolute;
+    display: flex;
+    width: 77%;
+    justify-content: end;
+    align-items: end;
+    }
+    
+    #inp-search {
+        width: 750px;
+        height: 60px;
+        padding: 0px 50px; 
+        border-radius: 50px;
+        font-size: 20px;
+        border: 1px solid gray;
+    }
+
+    
+    
+    #but{
+        position: absolute;
+        top: 0;
+        right: 800px;
+        width: 40px;
+        height: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 20px;
+        color: gray;
+        margin-top: 20px;
+        
+    }
+
+    #filter {
+        height: 80px;
+        width: 710px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #full-filter {
+        width: 950px;
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+    }
+
+    #completed {
+        height: 50px;
+        width: 430px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    #last-week {
+        height: 40px;
+        width: 405px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    #container {
+        height: 110px;
+        display: grid;
+        justify-content: center;
+        align-items: end;
+    }
+
+    #first-transaction-container {
+        display: flex;
+        width: 880px;
+        height: 90px;
+        border: 1px solid rgb(208, 207, 207);
+        border-radius: 10px;
+    }
+
+    #first-profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(4, 91, 4);
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    #second-profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(4, 91, 4);
+        margin-top: 20px;
+        margin-left: 10px;
+    }

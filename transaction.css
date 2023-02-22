@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#border {
+    border: 2px solid gray;
+    height: 50px;
+}
+
+#gmail-fonts {
+    height: 50px;
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 20px;
+    color: rgb(96, 95, 95);
+    
+}
+
+#fonts {
+    width: 97%;
+    display: flex;
+    justify-content: end;
+    column-gap: 30px;
+}
+
+#paypal-logo {
+    display: flex;
+    justify-content: center;
+}
+
+#background {
+   width: 90px;
+   height: 90px;
+   background-color: rgb(255, 254, 254);
+   border-radius: 50%;
+   padding: 30px 0px 00px 30px;
+   margin-top: -78px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    height: 220px;
+    background: linear-gradient(#062a95,rgb(0, 149, 255)  );
+    margin-top: 70px;
+    margin-left: -5px;
+}
+
+#front {
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    margin-top: 150px;
+    margin-left: -360px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    #border {
+        border: 2px solid gray;
+        height: 50px;
+    }
+    
+    #gmail-fonts {
+        height: 50px;
+        display: flex;
+        align-items: end;
+        margin-left: 15px;
+        font-size: 20px;
+        color: rgb(96, 95, 95);
+        
+    }
+    
+    #fonts {
+        width: 350px;
+        display: flex;
+        justify-content: end;
+        column-gap: 30px;
+    }
+    
+    #paypal-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #background {
+       width: 90px;
+       height: 90px;
+       background-color: rgb(255, 254, 254);
+       border-radius: 50%;
+       padding: 30px 0px 00px 30px;
+       margin-top: -78px;
+    }
+    
+    #container {
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        height: 220px;
+        background: linear-gradient(#062a95,rgb(0, 149, 255)  );
+        margin-top: 70px;
+        margin-left: -5px;
+    }
+    
+    #front {
+        background-color: white;
+        width: 350px;
+        height: 400px;
+        margin-top: 150px;
+        margin-left: -360px;
+        border-radius: 20px;
+    }
+}

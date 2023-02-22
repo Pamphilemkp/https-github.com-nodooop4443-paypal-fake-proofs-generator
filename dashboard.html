@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal: Summary</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/a509e366ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="navbar">
+    <ul>
+        <img style="width: 100px;" alt="paypal-app" src="https://www.paypalobjects.com/paypal-ui/spots/svg/paypal-app.svg" class="" data-test-id="aqprimary-spot">
+        <li>
+           
+         <a style="padding: 15px; border-radius: 40px; background-color: rgba(209,241,255,.1);"  href="#"> <b>Dashboard</b></a>
+         <a  style="margin-left: 30px;" href="#" onclick="goPayment()" id="payment"><b>Send and Request</b></a>
+         </script>
+         <a  style="margin-left: 30px;" href="#"><b onclick="wallet()">Wallet</b></a>
+         <a  style="margin-left: 30px;" href="#" onclick="activity()"><b>Activity</b></a>
+         <a  style="margin-left: 30px;" href="#"><b>Help</b></a>
+        </li>
+        <i style="margin-left: 25%;" class="fa-solid fa-bell"></i>
+        <i class="fa-sharp fa-solid fa-gear"></i>
+        <a  style=" color: white;
+        text-decoration: none; font-family: arial; font-size: .875rem; margin-top: 7px; color: #D1F1FF;" href="#"><strong>LOG OUT</strong></a>
+    </ul>
+    </div>
+
+<div id="containers">
+    <div id="first-container">
+        <div id="pay-someone">
+            <img style="width: 250px; margin-left: 20px;" src="https://www.paypalobjects.com/consumeronboarding/images/new-ux/activation-module/nux-p2p-send-goods-services-mobile.png" alt="">
+            <h2 style="color: white; font-family: arial; margin-left: 30px; margin-top: 10px;">Pay someone</h2>
+            <p style="color: white; font-family: arial; width: 200px; font-size: 18px; margin-top: 15px; margin-left: 30px;">Pay for things that you bought or a service you received.</p>
+            <button id="bt-payment"><p>Send Payments</p></button>
+        </div>
+
+        <div id="get-paid">
+            <img style="width: 250px; margin-left: 20px;" src="https://www.paypalobjects.com/consumeronboarding/images/new-ux/activation-module/nux-p2p-request-goods-services-mobile.png" alt="">
+            <h2 style="color: white; font-family: arial; margin-left: 30px; margin-top: 10px;">Get paid</h2>
+            <p style="color: white; font-family: arial; width: 220px; font-size: 18px; margin-top: 15px; margin-left: 30px;">Get paid for selling something or for the work you did.</p>
+            <button id="bt-payment"><p>Request Money</p></button>
+        </div>
+    </div>
+    <div id="paypal-app">
+     <div id="app">
+        <img style="width: 50px; margin-left: 20px; margin-top: 20px;" alt="paypal-app" src="https://www.paypalobjects.com/paypal-ui/spots/svg/paypal-app.svg" class="" data-test-id="aqprimary-spot">
+        <p style="font-family: arial; margin-left: 100px; margin-top: -50px;font-size: 18px; color: #0c0c0d;">Get the PayPal app</p>
+
+        <p style="font-family: arial; font-size: 15px; margin-left: 100px;margin-top: 10px; color: #0c0c0d;">start doing more with paypal</p>
+     </div>
+    </div>
+
+    <div id="paypal-balance">
+        <div id="balance">
+            <h3 style="font-family: arial; margin-left: 30px; margin-top: 30px;cursor: pointer;">PayPal balance</h3>
+            <p id="cash" style="font-size: 40px; margin-left: 30px; margin-top: 10px; font-family: arial;">17485,67 <i style="font-size: 35px;" class="fa-sharp fa-solid fa-dollar-sign"></i></p> 
+            <p style="font-family: arial; margin-left: 35px; color: #0c0c0d; margin-top: 10px; font-size: 15px;" >Avaliable</p>
+            <button id="transfer-funds">Transfer Funds</button>
+            
+        </div>
+    </div>
+
+    <div id="recent-activity">
+        <div id="about">
+            <h3 style="font-family: arial; margin-left: 30px; margin-top: 30px;cursor: pointer;">Recent activity</h3>
+            <p style="font-size: 18px; margin-left: 40px; margin-top: 20px;font-family: arial; width: 550px;">See when money comes in, and when it goes out. You'll find your recent PayPal activity here.</p>
+            <p style=" margin-top: 40px; font-size: 20px; margin-left: 30px; color: #1072eb; font-family: arial; cursor: pointer;" href="#" id="show-all"><b>Show all</b></p>
+            
+        </div>
+    </div>
+</div>
+
+<div id="more">
+    <div id="link-card">
+        <button id="send">Send</button>
+        <button id="request">Request</button>
+        <div>
+        <img style="width: 40px; margin-left: 20px; margin-top: 50px; background-color: rgb(248, 233, 233); border-radius:50px; padding: 11px; cursor: pointer;" alt="more" src="https://www.paypalobjects.com/paypal-ui/spots/svg/more.svg" class="ppvx_spot___1-7-0 cw-quick-links__icon--small">
+        <p style="font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif; margin-left: 35px; margin-top: 10px;">More</p>
+        <h3 style="font-family: arial; margin-left: 25px; margin-top: 60px;">Banks and cards</h3>
+        <img style="width: 30px; padding: 11px; background-color: rgb(248, 233, 233); border-radius: 50px; margin-left: 20px; margin-top: 20px;" alt="credit-cards" src="https://www.paypalobjects.com/paypal-ui/spots/svg/credit-cards.svg" class="ppvx_spot___1-7-0" data-test-id="bc-0-cc-spot">
+        <p style="margin-left: 100px; margin-top: -55px; font-size: 20px; font-family: arial; width: 300px;">Shop and send payments more securely. Link your credit card now.</p>
+        <p style="margin-left: 30px; margin-top: 30px; font-family: arial;color: #1072eb; font-size: 17px; cursor: pointer;"><b>Link a Card or Bank</b></p>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    
+goPayment = () => {
+    window.location = "payment.html"
+}
+
+function wallet() {
+    window.location.href = "generator.html"
+}
+
+function activity() {
+    window.location.href = "activity.html"
+}
+
+
+</script>
+
+
+
+</body>
+</html>
+

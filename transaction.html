@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a509e366ca.js" crossorigin="anonymous"></script>
+    <title>Transaction</title>
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+    <div id="gmail-fonts">
+        <i style="cursor: pointer;" class="fa-solid fa-arrow-left" onclick="comesBack()"></i>
+        <div id="fonts">
+            <i class="fa-light fa-inbox-in"></i>
+        <i class="fa-regular fa-trash-can"></i>
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        </div>
+        <hr style="border: 0.5px solid rgb(237, 233, 233); margin-top: 20px; box-shadow: 0px 0px 0.7px 0px;">
+
+        <div id="paypal-logo">
+
+            <div id="container">
+                <label id="background">
+                <img style="width: 70px; border-radius: 50%;" src="../paypa-images/paypal-trust-logo.jfif">
+                </label>
+            </div>
+            <div id="front">
+            <p style="font-family: arial; margin-left: 100px;font-size: 35px;margin-top: 35px;">You sent </p>
+            <p style="font-family: arial; margin-left: 35px;font-size: 35px;margin-top: 10px;"> <p id="usd-cash" style="font-family: arial; margin-left: 65px;font-size: 35px;margin-top: -30px;"><i class="fa-regular fa-dollar-sign"></i></p> <p style="font-family: arial; margin-left: 180px;font-size: 35px; margin-top: -75px;">USD to  <p id="pay-email" style="font-family: arial; margin-left: 70px;font-size: 35px;margin-top: -35px;"></p></p></p></p>
+
+            <p style="font-size: 20px; font-family: arial; color: gray;margin-left: 80px;">Transaction details </p>
+
+            <div>
+                <p style="font-family: arial; margin-left: 5px;"><b>Transaction ID</b></p>
+                <p style="font-family: arial; margin-left: 5px; margin-top: -13px;">9H634221J94208636</p>
+            </div>
+
+            <div id="transaction-date">
+                <p style="font-family: arial; margin-left: 250px;margin-top: -55px;"><b>Transaction  <p style="font-family: arial; margin-left: 306px;margin-top: -15px;">Date</p></b></p>
+                <p style="font-family: arial; margin-left: 220px; margin-top: -10px;">19 Februaly 2023</p>
+                 <br>
+                <hr>
+                <p style="font-family: arial;"><b>Money sent</b></p>
+                <p style="font-size: 20px; font-family: arial; color: rgb(106, 101, 101); margin-left: 225px; margin-top: -37px;"><i class="fa-regular fa-dollar-sign"></i><span id="real-cash"></span> USD</p>
+                
+                <p style="font-size: 18px; font-family: arial; color: rgb(106, 101, 101);"> Paid with: </p>
+
+                <p style="font-size: 18px; font-family: arial; color: rgb(106, 101, 101);">Paypal balance (USD)</p>
+
+                <p style="font-size: 20px; font-family: arial; color: rgb(106, 101, 101); margin-left: 235px; margin-top: -40px;"><i class="fa-regular fa-dollar-sign"></i>1083 USD</p>
+                
+            </div>
+
+            </div>
+        </div>
+
+<script>
+    function comesBack() {
+        window.location.href = "dashboard.html"
+    }
+
+    var savetxt = localStorage.getItem("spawnText")
+    document.getElementById("pay-email").innerHTML = savetxt
+
+    var savedtxt = localStorage.getItem("myTxtLabs")
+    document.getElementById("usd-cash").innerHTML = savedtxt
+    
+    let savesTxt = localStorage.getItem("spawnMyTxtLab")
+    document.getElementById("real-cash").innerHTML = savesTxt
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fullpay.css">
+</head>
+<body>
+    <div id="succes">
+        <img src="https://cdn.discordapp.com/attachments/658059622929924096/658416971406245899/checkout_paypal.png">
+        <p style="color: #1E2021; font-family: arial; margin-top: 50px;">You've sent <label id="real-money"></label> USD to <label id="real-email"></label></p>
+        <button style="margin-top: 100px;" id="send" onclick="paypalMoreMoney()">Send more money</button>
+        <label id="summary" onclick="goToDash()"><b>Go to summary</b></label>
+    </div>
+
+    <script>  
+
+    var saveText = localStorage.getItem("myText");
+		document.getElementById("real-email").innerHTML = saveText;
+    
+        var savedText = localStorage.getItem("myTextLab");
+		document.getElementById("real-money").innerHTML = savedText;
+
+        function paypalMoreMoney() {
+            window.location.href = "payment.html"
+        }
+
+    
+
+
+
+
+goToDash = () => {
+    window.location = "dashboard.html"
+}
+
+    </script>
+</body>
+</html>

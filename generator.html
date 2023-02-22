@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="generator.css">
+</head>
+<body>
+
+    <div style="display: flex; justify-content: center; height: 500px; align-items: center; flex-direction: column;">
+        <input id="usd-cash" placeholder="Money" style="width: 150px; height: 30px;"><br>
+        <input id="email" placeholder="Email" style="width: 150px; height: 30px;"><br>
+        <button style="width: 150px; height: 40px; font-size: 20px;" onclick="save()">Save</button>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <input id="small-name" placeholder="Small name" style="width: 150px; height: 30px;"><br>
+        <input id="activity-email" placeholder="Username" style="width: 150px; height: 30px;"><br>
+        <input id="activity-usd-cash" placeholder="Money" style="width: 150px; height: 30px;"><br>
+        <button style="width: 150px; height: 40px; font-size: 20px;" onclick="saveEl()">Save</button>
+
+    </div>
+
+
+    
+
+
+    <script>
+
+        function save() {
+            var inpTxt = document.getElementById("email").value;
+            localStorage.setItem("spawnText", inpTxt)
+            window.location.href = "transaction.html"
+
+            var inputText = document.getElementById("usd-cash").value;
+            localStorage.setItem("myTxtLabs", inputText)
+
+            let inpTxts = document.getElementById("usd-cash").value;
+            localStorage.setItem("spawnMyTxtLab", inpTxts)
+        }
+
+
+        function saveEl() {
+            var inputtxts = document.getElementById("activity-email").value;
+            localStorage.setItem("spawntxtEl", inputtxts)
+            window.location.href = "activity.html"
+
+            var inputtxts = document.getElementById("small-name").value;
+            localStorage.setItem("spawntxtElement", inputtxts)
+
+            var inputtxts = document.getElementById("activity-usd-cash").value;
+            localStorage.setItem("spawntxtElements", inputtxts)
+
+        }
+
+
+    
+
+    </script>
+</body>
+</html>

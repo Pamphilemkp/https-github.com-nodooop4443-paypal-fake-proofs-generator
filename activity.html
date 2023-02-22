@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activity.css">
+    <script src="https://kit.fontawesome.com/a509e366ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <img style="width: 100px;" alt="paypal-app" src="https://www.paypalobjects.com/paypal-ui/spots/svg/paypal-app.svg" class="" data-test-id="aqprimary-spot">
+            <li>
+               
+             <a href="#" onclick="dashboard()"> <b>Dashboard</b></a>
+             <a  style="margin-left: 30px;" href="#" onclick="goPayment()" id="payment"><b>Send and Request</b></a>
+             </script>
+             <a  style="margin-left: 30px;" href="#"><b onclick="wallet()">Wallet</b></a>
+             <a style="padding: 15px; border-radius: 40px; background-color: rgba(209,241,255,.1);" style="margin-left: 30px;" href="#"><b>Activity</b></a>
+             <a  style="margin-left: 30px;" href="#"><b>Help</b></a>
+            </li>
+            <i style="margin-left: 25%;" class="fa-solid fa-bell"></i>
+            <i class="fa-sharp fa-solid fa-gear"></i>
+            <a  style=" color: white;
+            text-decoration: none; font-family: arial; font-size: .875rem; margin-top: 7px; color: #D1F1FF;" href="#"><strong>LOG OUT</strong></a>
+        </ul>
+        </div>
+
+        <div id="inp-payment">
+            <input type="email"  id="inp-search"  required-class="form-control " placeholder="Search be name or email"> 
+            <button id="but"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <i style="color: #142c8e; font-size: 20px; margin-left: 78.5%; justify-content: end; margin-top: 45px; padding: 16px; border-radius: 50px; background-color: rgba(239, 229, 229, 0.388); cursor: pointer;" class="fa-solid fa-download"></i>
+
+        <div id="filter">
+            <p style="font-family: arial; font-size: 18px;">Filter by</p>
+        </div>
+        <div id="full-filter">
+            <p style="font-family: arial; font-size: 15px; padding: 11px;border-radius: 30px; background-color: #D1F1FF; margin-top: -10px;">Date: Last 90 days</p>
+            <button style="font-family: arial; font-size: 15px; width: 60px;border-radius: 30px; margin-top: -10px; border: 1px solid gray; color: #142c8e; background-color: white;">Type</button>
+            <button style="font-family: arial; font-size: 15px; width: 60px;border-radius: 30px; margin-top: -10px; border: 1px solid gray; color: #142c8e; background-color: white;">Status</button>
+          </div>
+            
+         <div id="completed">
+            <h3 style="font-family: arial;">Completed</h1>
+         </div> 
+         <div id="last-week">
+         <p style="font-family: arial; color: gray;">Last week</p>
+         </div>
+
+         <div id="container">
+            <div id="first-transaction-container">
+            <p id="first-profile"><label id="small-name" style="position: absolute; margin-top: 16px; margin-left: 13px; font-family: arial; color: white;">ND</label></p>
+            <p style="font-family: arial; margin-top: 24px; margin-left: 10px;"><b id="first-username">Nodo Gulbiani</b></p>
+            <p style="margin-top: 50px; margin-left: -105px; font-family: arial;"> 21 Feb <p style="margin-top: 43px; margin-left: 4px; font-size: 20px;">.</p></p>
+            <p style="font-family: arial; margin-top: 50px; margin-left: 5px;">Payment</p>
+            <p style="font-family: arial; margin-left: 550px; margin-top: 30px;"><b>- <b id="usd-cash-lab">120,00</b> <i class="fa-sharp fa-solid fa-dollar-sign"></i> USD</b></p>
+            
+            </div>
+         </div>
+
+         
+         <div id="container">
+            <div style="margin-top: 20px;" id="first-transaction-container">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/332066162_713850093610897_3636501615392388905_n.jpg?stp=dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeGtZnjTsfsWmgD5miwjjFxT2mlmV4ndVQ3aaWZXid1VDdTYxhE5KcuXok5ODw2cAOZ26wX24CS0MF_0cIw8_t6E&_nc_ohc=3Skcibn9CzQAX8d5EV7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQopX_EcxU-8ZMGXGiMEtCdwlMNTnz3Aimlb7rdrCaM8Q&oe=641C1DF8" id="second-profile"><label style="position: absolute; margin-top: 16px; margin-left: 13px; font-family: arial; color: white;">TM</label></p>
+            <p style="font-family: arial; margin-top: 24px; margin-left: 15px;"><b>Tomasz sliwka</b></p>
+            <p style="margin-top: 50px; margin-left: -110px; font-family: arial;">13 Feb <p style="margin-top: 43px; margin-left: 4px; font-size: 20px;">.</p></p>
+            <p style="font-family: arial; margin-top: 50px; margin-left: 5px;">Payment</p>
+            <p style="font-family: arial; margin-left: 550px; margin-top: 30px;"><b>- 155,00 <i class="fa-sharp fa-solid fa-dollar-sign"></i> USD</b></p>
+            </div>
+
+            <div id="container">
+                <div id="first-transaction-container">
+                <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/327421418_741581587689531_2861039523424280429_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEhz4d6BnX7n5ie3ZUUZxhtpVuNhrxt-V-lW42GvG35X9YmKQicMevrVo09DzENRB-R86Hb-90Fuqlvwtu6WGQK&_nc_ohc=ofISD-fu4h4AX9nBqCV&tn=6FAqTEdBTrFACRwi&_nc_ht=scontent.ftbs4-2.fna&oh=00_AfDTzdllNhuauWgy-b6OgZC79kvnMGMMXw4mWC0dyOrdow&oe=63F9B485" id="second-profile"><label style="position: absolute; margin-top: 16px; margin-left: 13px; font-family: arial; color: white;"></label></p>
+                <p style="font-family: arial; margin-top: 24px; margin-left: 15px;"><b>Tornike Mefara</b></p>
+                <p style="margin-top: 50px; margin-left: -110px; font-family: arial;">2 Feb <p style="margin-top: 43px; margin-left: 4px; font-size: 20px;">.</p></p>
+                <p style="font-family: arial; margin-top: 50px; margin-left: 5px;">Payment</p>
+                <p style="font-family: arial; margin-left: 550px; margin-top: 30px;"><b> - 55,00 <i class="fa-sharp fa-solid fa-dollar-sign"></i> USD</b></p>
+                </div>
+
+     <script>
+        function dashboard() {
+            window.location.href = "dashboard.html"
+        }
+
+        var gettxts = localStorage.getItem("spawntxtEl")
+        document.getElementById("first-username").innerHTML = gettxts
+
+        var gettxts = localStorage.getItem("spawntxtElement")
+        document.getElementById("small-name").innerHTML = gettxts
+
+        var gettxts = localStorage.getItem("spawntxtElements")
+        document.getElementById("usd-cash-lab").innerHTML = gettxts
+         
+     </script>           
+
+</body>
+</html>

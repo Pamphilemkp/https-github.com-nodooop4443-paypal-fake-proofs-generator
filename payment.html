@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal: Send money</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/a509e366ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <ul id="uli">
+            <img style="width: 100px;" alt="paypal-app" src="https://www.paypalobjects.com/paypal-ui/spots/svg/paypal-app.svg" class="" data-test-id="aqprimary-spot">
+            <li id="lili">
+               
+             <a  href="#"  onclick="goDashboard()"> <b>Dashboard</b></a>
+             <a  style="padding: 15px; border-radius: 40px; background-color: rgba(209,241,255,.1);" style="margin-left: 30px;" href="#" ><b>Send and Request</b></a>
+             </script>
+             <a  style="margin-left: 30px;" href="#"><b onclick="wallet()">Wallet</b></a>
+             <a  style="margin-left: 30px;" href="#"><b>Activity</b></a>
+             <a  style="margin-left: 30px;" href="#"><b>Help</b></a>
+            </li>
+            <i style="margin-left: 25%;" class="fa-solid fa-bell"></i>
+            <i class="fa-sharp fa-solid fa-gear"></i>
+            <a  style=" color: white;
+            text-decoration: none; font-family: arial; font-size: .875rem; margin-top: 7px; color: #D1F1FF;" href="#"><strong>LOG OUT</strong></a>
+        </ul>
+          <div id="nav">
+            <div id="nav-container">
+                <div id="more">
+              <a href="#" style="font-family: arial; color: #142c8e; border-radius: 50px; background-color: rgba(209, 241, 255, 0.4); padding: 11px; cursor: pointer; text-decoration: none; "><b>Send</b></a>
+              <a href="#" style="font-family: arial; cursor: pointer; text-decoration: none; color: #0c0c0d;"><b>Request</b></a>
+              <a href="#" style="font-family: arial; cursor: pointer;text-decoration: none; color: #0c0c0d;"><b>Contacts</b></a>
+              <a href="#" style="font-family: arial; cursor: pointer; text-decoration: none; color: #0c0c0d;"><b>More</b></a>
+                </div>
+            </div>
+          </div>
+
+        <div id="full-payment">
+
+            <p id="payment">Send payment to</p><br>
+        </div>
+
+        <div id="inp-payment">
+            <input type="email"  id="inp-search"  required-class="form-control " placeholder="Name, @username, email, or mobile"> 
+            <button id="but"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            
+        </div>
+        <div id="next-but">
+            <button id="next" type="button" onclick="goSendMoney()">Next</button>
+            <p style="margin-left: 65%; font-size: 28px; font-family: arial;margin-top: -200px;"><b>More ways to send</b></p>
+            <img style="width: 30px; margin-left: 65%; margin-top: 30px; padding: 11px; border-radius: 50px; background-color: #f7f5f0;" alt="invoice" src="https://www.paypalobjects.com/paypal-ui/spots/svg/invoice.svg" class="ppvx_spot___1-8-0" aria-hidden="true" data-test="link-card-icon" style="margin-right: 0px;">
+            <h3 style="font-family: arial; margin-left: 70%; margin-top: -55px;">Send an invoice</h3>
+            <p style="font-family: arial; margin-left: 70%; width: 200px;font-size: 14px; margin-top: 5px;">Costumize,track, and send invoices.</p>
+            </div>
+        </div>
+
+<script>
+
+
+function goSendMoney() {
+var inputText = document.getElementById("inp-search").value;
+localStorage.setItem("myText", inputText);
+window.location.href = "send.html";
+		}
+
+        goDashboard = () => {
+    window.location = "dashboard.html"
+}
+
+function wallet() {
+    window.location.href = "generator.html"
+}
+
+
+
+
+</script>
+
+</body>
+</html>
